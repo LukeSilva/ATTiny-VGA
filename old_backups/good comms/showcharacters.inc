@@ -1,0 +1,376 @@
+;setup character 1
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ andi r22, 0x0F ;4
+ andi r21, 0xF0 ;5
+ nop ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 1
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix 2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+; 24 cycles
+;setup character 2
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 3
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 3
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 4
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 4
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 5
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 5
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 6
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 6
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 7
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 7
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 8
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 8
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 9
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 9
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 10
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 10
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 11
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 11
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 12
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 12
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 13
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 13
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 14
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 14
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 15
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 15
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 16
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
+;show character 16
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ nop ;6
+ nop ;7
+ out PORTA, r0 ;8
+;pix2
+ lpm r0, z+ ;3
+ out PORTA, r0 ;4
+ swap r0 ;5
+ mov ZL, r1 ;6
+ mov ZH, r2 ;7
+ out PORTA, r0 ;8
+;24 cycles
+;setup character 17
+ ld r21, Y+ ;2
+ mov r22, r21 ;3
+ out PORTA, r19 ;4
+ andi r22, 0x0F ;5
+ andi r21, 0xF0 ;6
+ add ZL, r21 ;7
+ adc ZH, r22 ;8
