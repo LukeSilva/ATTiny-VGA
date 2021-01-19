@@ -8,6 +8,7 @@ I used to have a program to create font files, as well as an Arduino program to 
 
 We target the VGA resolution of 800x600, which requires a clock speed of 40Mhz. Since the maximum clock speed of the ATTiny is 20Mhz, we divide all the timings by two.
 
+```
 At 20 Mhz
 
 HSYNC:
@@ -21,7 +22,7 @@ VSYNC:
 1 line  front porch
 4 lines sync pulse
 23 lines back porch
-
+```
 
 ## Rendering Loop
 
@@ -33,7 +34,7 @@ Since we're targeting a tiled graphics display there are two main functions that
 Since we'll need to be doing index resolution during the rendering loop, there will be a portion of time where we cannot send any new pixel data. For text characters this is not a large problem - there needs to be a blank space between characters, otherwise each character would run into the next. However, if we'd like to render full / half blocks, it would be desirable to have the right-most pixels to extend over into the start of the next tile. Thus, we section the font into text tile and graphics tile sections, choosing to extend or blank the right most pixels of the character.
 
 Annotated assembly for the display of a single character.
-```
+```asm
 ;setup character (8 clocks total)
  cpi r22, CHAR_EXTEND ;1 - Compare previous tile with the font's extend threshold
  mov r22, r21     ;2 - Copy new tile into r22
